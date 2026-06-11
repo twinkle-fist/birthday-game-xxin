@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="HBD XXXXXIN_0611" startnode="23" creator="Twine" creator-version="2.12.0" format="SugarCube" format-version="2.37.3" ifid="4a00b71a-9196-419b-9fd5-bbda25fba605" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#scene {
+	<tw-storydata name="HBD XXXXXIN_0611" startnode="19" creator="Twine" creator-version="2.12.0" format="SugarCube" format-version="2.37.3" ifid="4a00b71a-9196-419b-9fd5-bbda25fba605" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#scene {
   position: fixed;
   inset: 0;
   margin: auto;
@@ -188,7 +188,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 
   box-sizing: border-box;
   font-size: 1rem;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.hide();</script><tw-passagedata pid="1" name="HBD XXIN" tags="" position="600,175" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/date1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[啊！是小茗的生日！-&gt;A_Start]][[好像是世界蚊子日？-&gt;B_Start]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.hide();</script><tw-passagedata pid="1" name="HBD XXIN" tags="" position="600,175" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/date1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[啊！是小茗的生日！-&gt;A_Start]][[好像是世界蚊子日？-&gt;B_Start]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -201,9 +201,9 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/date1.png&quot;,
-    &quot;images/xxin/date2.png&quot;,
-    &quot;images/xxin/date3.png&quot;
+    &quot;images/date1.png&quot;,
+    &quot;images/date2.png&quot;,
+    &quot;images/date3.png&quot;
   ];
 
   let frame = 0;
@@ -272,7 +272,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="A_Start" tags="" position="525,350" size="100,100">&lt;&lt;set $remembered to true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/phone1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[問她要不要一起去吃飯-&gt;InviteFirst]][[著手準備禮物-&gt;ChooseGift]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="A_Start" tags="" position="525,350" size="100,100">&lt;&lt;set $remembered to true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/phone1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[問她要不要一起去吃飯-&gt;InviteFirst]][[著手準備禮物-&gt;ChooseGift]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -284,13 +284,13 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/phone2.png&quot;,
-    &quot;images/xxin/phone3.png&quot;
+    &quot;images/phone2.png&quot;,
+    &quot;images/phone3.png&quot;
   ];
 
   let frame = 0;
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/phone1.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/phone1.png&quot;);
 
   window.phoneAnimTimer = setInterval(() =&gt; {
     $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, frames[frame]);
@@ -351,7 +351,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="B_Start" tags="" position="675,350" size="100,100">&lt;&lt;set $remembered to false&gt;&gt;&lt;&lt;set $invited = true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/chat1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[驚覺今天是她生日！馬上來挑禮物-&gt;ChooseGift]][[前往見面地點-&gt;PickBear]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="B_Start" tags="" position="675,350" size="100,100">&lt;&lt;set $remembered to false&gt;&gt;&lt;&lt;set $invited = true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/chat1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[驚覺今天是她生日！馬上來挑禮物-&gt;ChooseGift]][[前往見面地點-&gt;PickBear]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -363,15 +363,15 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/chat1.png&quot;,
-    &quot;images/xxin/chat1.png&quot;,
-    &quot;images/xxin/chat1.png&quot;,
-    &quot;images/xxin/chat2.png&quot;
+    &quot;images/chat1.png&quot;,
+    &quot;images/chat1.png&quot;,
+    &quot;images/chat1.png&quot;,
+    &quot;images/chat2.png&quot;
   ];
 
   let frame = 0;
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/chat1.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/chat1.png&quot;);
 
   window.phoneAnimTimer = setInterval(() =&gt; {
     $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, frames[frame]);
@@ -436,7 +436,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="InviteFirst" tags="" position="475,500" size="100,100">&lt;&lt;set $invited = true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/chat3.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if !$gift&gt;&gt;[[去挑選禮物-&gt;ChooseGift]]&lt;&lt;else&gt;&gt;[[前往見面的路上-&gt;Meet]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="InviteFirst" tags="" position="475,500" size="100,100">&lt;&lt;set $invited = true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/chat3.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if !$gift&gt;&gt;[[去挑選禮物-&gt;ChooseGift]]&lt;&lt;else&gt;&gt;[[前往見面的路上-&gt;Meet]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -449,9 +449,9 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/chat3.png&quot;,
-    &quot;images/xxin/chat3.png&quot;,
-    &quot;images/xxin/chat4.png&quot;
+    &quot;images/chat3.png&quot;,
+    &quot;images/chat3.png&quot;,
+    &quot;images/chat4.png&quot;
   ];
 
   let frame = 0;
@@ -517,7 +517,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 600);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="ChooseGift" tags="" position="600,500" size="100,100">&lt;&lt;set $remembered to true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/gift1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[✉️ 卡片-&gt;PickCard]][[🌸 花束-&gt;PickFlower]][[🐶 狗狗玩具-&gt;PickDog]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="ChooseGift" tags="" position="600,500" size="100,100">&lt;&lt;set $remembered to true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/gift1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[✉️ 卡片-&gt;PickCard]][[🌸 花束-&gt;PickFlower]][[🐶 狗狗玩具-&gt;PickDog]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -529,14 +529,14 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/gift1.png&quot;,
-    &quot;images/xxin/gift2.png&quot;,
-    &quot;images/xxin/gift3.png&quot;
+    &quot;images/gift1.png&quot;,
+    &quot;images/gift2.png&quot;,
+    &quot;images/gift3.png&quot;
   ];
 
   let frame = 0;
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/gift1.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/gift1.png&quot;);
 
   window.phoneAnimTimer = setInterval(() =&gt; {
     $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, frames[frame]);
@@ -595,7 +595,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 600);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Meet" tags="" position="750,825" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/meet1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if not $triedSub&gt;&gt;[[潛艇堡-&gt;SubFail]]&lt;&lt;/if&gt;&gt;[[Poke-&gt;Poke]]&lt;&lt;if not $triedCurry&gt;&gt;[[咖哩飯-&gt;CurryFail]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Meet" tags="" position="750,825" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/meet1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if not $triedSub&gt;&gt;[[潛艇堡-&gt;SubFail]]&lt;&lt;/if&gt;&gt;[[Poke-&gt;Poke]]&lt;&lt;if not $triedCurry&gt;&gt;[[咖哩飯-&gt;CurryFail]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -607,13 +607,13 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/meet1.png&quot;,
-    &quot;images/xxin/meet2.png&quot;
+    &quot;images/meet1.png&quot;,
+    &quot;images/meet2.png&quot;
   ];
 
   let frame = 0;
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/meet1.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/meet1.png&quot;);
 
   window.phoneAnimTimer = setInterval(() =&gt; {
     $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, frames[frame]);
@@ -672,7 +672,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="PickCard" tags="" position="550,650" size="100,100">&lt;&lt;set $gift to &quot;card&quot;&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/gift1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;inputArea&quot;&gt;&lt;&lt;textbox &quot;$card&quot; &quot;生日快樂…&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;[[寫好了！-&gt;AfterWriteCard]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="PickCard" tags="" position="550,650" size="100,100">&lt;&lt;set $gift to &quot;card&quot;&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/gift1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;inputArea&quot;&gt;&lt;&lt;textbox &quot;$card&quot; &quot;生日快樂…&quot;&gt;&gt;&lt;br&gt;&lt;br&gt;[[寫好了！-&gt;AfterWriteCard]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -684,13 +684,13 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/gift1.png&quot;,
-    &quot;images/xxin/gift11.png&quot;
+    &quot;images/gift1.png&quot;,
+    &quot;images/gift11.png&quot;
   ];
 
   let frame = 0;
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/gift1.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/gift1.png&quot;);
 
   window.phoneAnimTimer = setInterval(() =&gt; {
     $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, frames[frame]);
@@ -750,7 +750,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="PickFlower" tags="" position="700,650" size="100,100">&lt;&lt;set $gift = &quot;flower&quot;&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/gift2.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if !$invited&gt;&gt;[[鼓起勇氣約她-&gt;InviteFirst]]&lt;&lt;else&gt;&gt;[[前往見面地點-&gt;Meet]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="PickFlower" tags="" position="700,650" size="100,100">&lt;&lt;set $gift = &quot;flower&quot;&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/gift2.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if !$invited&gt;&gt;[[鼓起勇氣約她-&gt;InviteFirst]]&lt;&lt;else&gt;&gt;[[前往見面地點-&gt;Meet]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -761,7 +761,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
     clearInterval(window.phoneAnimTimer);
   }
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/gift2.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/gift2.png&quot;);
 
 
   // ===== 打字機 =====
@@ -810,7 +810,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="PickDog" tags="" position="825,650" size="100,100">&lt;&lt;set $gift = &quot;dog&quot;&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/gift3.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if !$invited&gt;&gt;[[鼓起勇氣約她-&gt;InviteFirst]]&lt;&lt;else&gt;&gt;[[前往見面地點-&gt;Meet]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="PickDog" tags="" position="825,650" size="100,100">&lt;&lt;set $gift = &quot;dog&quot;&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/gift3.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if !$invited&gt;&gt;[[鼓起勇氣約她-&gt;InviteFirst]]&lt;&lt;else&gt;&gt;[[前往見面地點-&gt;Meet]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -821,7 +821,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
     clearInterval(window.phoneAnimTimer);
   }
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/gift3.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/gift3.png&quot;);
 
 
   // ===== 打字機 =====
@@ -870,7 +870,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="PickBear" tags="" position="950,650" size="100,100">&lt;&lt;set $remembered to false&gt;&gt;&lt;&lt;set $gift = &quot;bear&quot;&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/gift4.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[順手買下來，小茗肯定會喜歡的-&gt;Meet]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="PickBear" tags="" position="950,650" size="100,100">&lt;&lt;set $remembered to false&gt;&gt;&lt;&lt;set $gift = &quot;bear&quot;&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/gift4.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[順手買下來，小茗肯定會喜歡的-&gt;Meet]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -881,7 +881,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
     clearInterval(window.phoneAnimTimer);
   }
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/gift4.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/gift4.png&quot;);
 
 
   // ===== 打字機 =====
@@ -931,7 +931,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Poke" tags="" position="625,950" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/poke1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[推門進入-&gt;Promo]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Poke" tags="" position="625,950" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/poke1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[推門進入-&gt;Promo]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -943,15 +943,15 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/poke2.png&quot;,
-    &quot;images/xxin/poke3.png&quot;,
-    &quot;images/xxin/poke4.png&quot;,
-    &quot;images/xxin/poke5.png&quot;
+    &quot;images/poke2.png&quot;,
+    &quot;images/poke3.png&quot;,
+    &quot;images/poke4.png&quot;,
+    &quot;images/poke5.png&quot;
   ];
 
   let frame = 0;
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/poke1.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/poke1.png&quot;);
 
   window.phoneAnimTimer = setInterval(() =&gt; {
     $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, frames[frame]);
@@ -1012,7 +1012,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="SubFail" tags="" position="750,950" size="100,100">&lt;&lt;set $triedSub to true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/sub1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[嗯嗯～-&gt;Meet]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="SubFail" tags="" position="750,950" size="100,100">&lt;&lt;set $triedSub to true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/sub1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[嗯嗯～-&gt;Meet]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -1024,13 +1024,13 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/sub1.png&quot;,
-    &quot;images/xxin/sub2.png&quot;
+    &quot;images/sub1.png&quot;,
+    &quot;images/sub2.png&quot;
   ];
 
   let frame = 0;
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/sub1.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/sub1.png&quot;);
 
   window.phoneAnimTimer = setInterval(() =&gt; {
     $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, frames[frame]);
@@ -1092,7 +1092,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="CurryFail" tags="" position="875,950" size="100,100">&lt;&lt;set $triedCurry to true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/curry1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[好-&gt;Meet]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="CurryFail" tags="" position="875,950" size="100,100">&lt;&lt;set $triedCurry to true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/curry1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[好-&gt;Meet]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -1104,14 +1104,14 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/curry1.png&quot;,
-    &quot;images/xxin/curry2.png&quot;,
-    &quot;images/xxin/curry3.png&quot;
+    &quot;images/curry1.png&quot;,
+    &quot;images/curry2.png&quot;,
+    &quot;images/curry3.png&quot;
   ];
 
   let frame = 0;
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/curry1.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/curry1.png&quot;);
 
   window.phoneAnimTimer = setInterval(() =&gt; {
     $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, frames[frame]);
@@ -1173,13 +1173,13 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="OrderFood" tags="" position="825,1075" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/menu.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;uiBox&quot;&gt;&lt;&lt;checkbox &quot;$seaweed&quot; &quot;seaweed&quot; false&gt;&gt; 海帶&lt;br&gt;&lt;&lt;checkbox &quot;$tamago&quot; &quot;tamago&quot; false&gt;&gt; 玉子燒&lt;br&gt;&lt;&lt;checkbox &quot;$onion&quot; &quot;onion&quot; false&gt;&gt; 洋蔥&lt;br&gt;&lt;&lt;checkbox &quot;$chicken&quot; &quot;chicken&quot; false&gt;&gt; 雞肉&lt;br&gt;&lt;&lt;checkbox &quot;$edamame&quot; &quot;edamame&quot; false&gt;&gt; 毛豆&lt;br&gt;&lt;&lt;checkbox &quot;$bad&quot; &quot;bad&quot; false&gt;&gt; 青蛙&lt;br&gt;&lt;br&gt;&lt;&lt;link &quot;點好了&quot; &quot;FoodResult&quot;&gt;&gt;&lt;&lt;set $toppings to []&gt;&gt;&lt;&lt;if $seaweed is &quot;seaweed&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;seaweed&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $tamago is &quot;tamago&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;tamago&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $onion is &quot;onion&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;onion&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $chicken is &quot;chicken&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;chicken&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $blackbean is &quot;blackbean&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;blackbean&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $edamame is &quot;edamame&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;edamame&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $bad is &quot;bad&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;bad&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="OrderFood" tags="" position="825,1075" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/menu.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;uiBox&quot;&gt;&lt;&lt;checkbox &quot;$seaweed&quot; &quot;seaweed&quot; false&gt;&gt; 海帶&lt;br&gt;&lt;&lt;checkbox &quot;$tamago&quot; &quot;tamago&quot; false&gt;&gt; 玉子燒&lt;br&gt;&lt;&lt;checkbox &quot;$onion&quot; &quot;onion&quot; false&gt;&gt; 洋蔥&lt;br&gt;&lt;&lt;checkbox &quot;$chicken&quot; &quot;chicken&quot; false&gt;&gt; 雞肉&lt;br&gt;&lt;&lt;checkbox &quot;$edamame&quot; &quot;edamame&quot; false&gt;&gt; 毛豆&lt;br&gt;&lt;&lt;checkbox &quot;$bad&quot; &quot;bad&quot; false&gt;&gt; 青蛙&lt;br&gt;&lt;br&gt;&lt;&lt;link &quot;點好了&quot; &quot;FoodResult&quot;&gt;&gt;&lt;&lt;set $toppings to []&gt;&gt;&lt;&lt;if $seaweed is &quot;seaweed&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;seaweed&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $tamago is &quot;tamago&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;tamago&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $onion is &quot;onion&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;onion&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $chicken is &quot;chicken&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;chicken&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $blackbean is &quot;blackbean&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;blackbean&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $edamame is &quot;edamame&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;edamame&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;if $bad is &quot;bad&quot;&gt;&gt;&lt;&lt;run $toppings.push(&quot;bad&quot;)&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;&lt;script&gt;&gt;$(document).one(&#39;:passagedisplay&#39;, function () {
   // ===== 圖片 =====
   if (window.phoneAnimTimer) {
     clearInterval(window.phoneAnimTimer);
   }
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/menu.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/menu.png&quot;);
   // ===== 打字機 =====
   const lines = [   &quot;你看著菜單，幫她選配料⋯⋯&quot;];
   let lineIndex = 0;
@@ -1211,7 +1211,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
   setTimeout(typeLine, 1200);
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="FoodResult" tags="" position="500,1325" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/like.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if $bad is &quot;bad&quot;&gt;&gt;[[那必須的-&gt;AfterMeal]]&lt;&lt;else&gt;&gt;[[那這個就交給我解決吧-&gt;AfterMeal]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="FoodResult" tags="" position="500,1325" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/like.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if $bad is &quot;bad&quot;&gt;&gt;[[那必須的-&gt;AfterMeal]]&lt;&lt;else&gt;&gt;[[那這個就交給我解決吧-&gt;AfterMeal]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -1225,9 +1225,9 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   let imagePath = &quot;&quot;;
 
   if (State.variables.bad === &quot;bad&quot;) {
-    imagePath = &quot;images/xxin/like.png&quot;;
+    imagePath = &quot;images/like.png&quot;;
   } else {
-    imagePath = &quot;images/xxin/dislike.png&quot;;
+    imagePath = &quot;images/dislike.png&quot;;
   }
 
   $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, imagePath);
@@ -1293,7 +1293,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Promo" tags="" position="625,1100" size="100,100">&lt;&lt;set $gotSupport = false&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/promo.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[我要領取應援-&gt;GetSupport]][[下次吧-&gt;OrderFood]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Promo" tags="" position="625,1100" size="100,100">&lt;&lt;set $gotSupport = false&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/promo.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[我要領取應援-&gt;GetSupport]][[下次吧-&gt;OrderFood]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -1304,7 +1304,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
     clearInterval(window.phoneAnimTimer);
   }
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/promo.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/promo.png&quot;);
 
 
   // ===== 打字機 =====
@@ -1354,7 +1354,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="AfterMeal" tags="" position="625,1325" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/after1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if $remembered&gt;&gt;[[拿出準備好的禮物-&gt;GiveGift]]&lt;&lt;else&gt;&gt;[[趕快拿出小熊補救-&gt;GiveGift]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="AfterMeal" tags="" position="625,1325" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/after1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if $remembered&gt;&gt;[[拿出準備好的禮物-&gt;GiveGift]]&lt;&lt;else&gt;&gt;[[趕快拿出小熊補救-&gt;GiveGift]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -1366,14 +1366,14 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/after1.png&quot;,
-    &quot;images/xxin/after2.png&quot;,
-    &quot;images/xxin/after3.png&quot;
+    &quot;images/after1.png&quot;,
+    &quot;images/after2.png&quot;,
+    &quot;images/after3.png&quot;
   ];
 
   let frame = 0;
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/after1.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/after1.png&quot;);
 
   window.phoneAnimTimer = setInterval(() =&gt; {
     $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, frames[frame]);
@@ -1449,7 +1449,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="GiveGift" tags="" position="750,1325" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/resultcard.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[你有喜歡真是太好了-&gt;EndingPhoto]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="GiveGift" tags="" position="750,1325" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/resultcard.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[你有喜歡真是太好了-&gt;EndingPhoto]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -1464,15 +1464,15 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   let imagePath = &quot;&quot;;
 
   if (gift === &quot;card&quot;) {
-    imagePath = &quot;images/xxin/resultcard.png&quot;;
+    imagePath = &quot;images/resultcard.png&quot;;
   } else if (gift === &quot;flower&quot;) {
-    imagePath = &quot;images/xxin/resultflower.png&quot;;
+    imagePath = &quot;images/resultflower.png&quot;;
   } else if (gift === &quot;dog&quot;) {
-    imagePath = &quot;images/xxin/resultdog.png&quot;;
+    imagePath = &quot;images/resultdog.png&quot;;
   } else if (gift === &quot;bear&quot;) {
-    imagePath = &quot;images/xxin/resultbear.png&quot;;
+    imagePath = &quot;images/resultbear.png&quot;;
   } else {
-    imagePath = &quot;images/xxin/resultcard.png&quot;;
+    imagePath = &quot;images/resultcard.png&quot;;
   }
 
   $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, imagePath);
@@ -1549,7 +1549,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="EndingPhoto" tags="" position="875,1325" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/endcard.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[明年還要一起過生日！！-&gt;Final]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="EndingPhoto" tags="" position="875,1325" size="100,100">&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/endcard.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[明年還要一起過生日！！-&gt;Final]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -1563,15 +1563,15 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   let imagePath = &quot;&quot;;
 
   if (State.variables.gift === &quot;card&quot;) {
-    imagePath = &quot;images/xxin/endcard.png&quot;;
+    imagePath = &quot;images/endcard.png&quot;;
   } else if (State.variables.gift === &quot;flower&quot;) {
-    imagePath = &quot;images/xxin/endflower.png&quot;;
+    imagePath = &quot;images/endflower.png&quot;;
   } else if (State.variables.gift === &quot;dog&quot;) {
-    imagePath = &quot;images/xxin/enddog.png&quot;;
+    imagePath = &quot;images/enddog.png&quot;;
   } else if (State.variables.gift === &quot;bear&quot;) {
-    imagePath = &quot;images/xxin/endbear.png&quot;;
+    imagePath = &quot;images/endbear.png&quot;;
   } else {
-    imagePath = &quot;images/xxin/endcard.png&quot;;
+    imagePath = &quot;images/endcard.png&quot;;
   }
 
   $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, imagePath);
@@ -1686,7 +1686,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 600);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="AfterWriteCard" tags="" position="575,775" size="100,100">&lt;&lt;set $remembered to true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/gift1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if !$invited&gt;&gt;[[鼓起勇氣約她-&gt;InviteFirst]]&lt;&lt;else&gt;&gt;[[前往見面地點-&gt;Meet]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="AfterWriteCard" tags="" position="575,775" size="100,100">&lt;&lt;set $remembered to true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/gift1.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;&lt;&lt;if !$invited&gt;&gt;[[鼓起勇氣約她-&gt;InviteFirst]]&lt;&lt;else&gt;&gt;[[前往見面地點-&gt;Meet]]&lt;&lt;/if&gt;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -1698,13 +1698,13 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   }
 
   const frames = [
-    &quot;images/xxin/gift1.png&quot;,
-    &quot;images/xxin/gift12.png&quot;
+    &quot;images/gift1.png&quot;,
+    &quot;images/gift12.png&quot;
   ];
 
   let frame = 0;
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/gift1.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/gift1.png&quot;);
 
   window.phoneAnimTimer = setInterval(() =&gt; {
     $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, frames[frame]);
@@ -1763,7 +1763,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
   setTimeout(typeLine, 1200);
 
 });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="GetSupport" tags="" position="750,1200" size="100,100">&lt;&lt;set $gotSupport = true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/xxin/support.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[開始點餐-&gt;OrderFood]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="GetSupport" tags="" position="750,1200" size="100,100">&lt;&lt;set $gotSupport = true&gt;&gt;&lt;div id=&quot;scene&quot;&gt;&lt;div class=&quot;top&quot;&gt;&lt;img id=&quot;phoneAnim&quot; src=&quot;images/support.png&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bottom&quot;&gt;&lt;div id=&quot;dialogArea&quot;&gt;&lt;div id=&quot;textBox&quot;&gt;&lt;/div&gt;&lt;div id=&quot;choices&quot;&gt;[[開始點餐-&gt;OrderFood]]&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).one(&#39;:passagedisplay&#39;, function () {
@@ -1774,7 +1774,7 @@ $(document).one(&#39;:passagedisplay&#39;, function () {
     clearInterval(window.phoneAnimTimer);
   }
 
-  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/xxin/support.png&quot;);
+  $(&quot;#phoneAnim&quot;).attr(&quot;src&quot;, &quot;images/support.png&quot;);
 
 
   // ===== 打字機 =====
