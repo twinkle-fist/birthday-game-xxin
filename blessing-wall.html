@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小餅們的生日祝福牆</title>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: white;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans TC", sans-serif;
+    }
+
+    body {
+      padding: 28px 18px 40px;
+      box-sizing: border-box;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 0.95rem;
+      opacity: 0.75;
+      margin-bottom: 28px;
+    }
+
+  #wall {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 100%;
+  border: 1.5px solid white;
+  border-radius: 14px;
+  background: black;
+  color: white;
+  padding: 16px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  line-height: 1.55;
+  word-break: break-word;
+  white-space: pre-wrap;
+  overflow: visible;
+}
+
+.message.short {
+  font-size: 1rem;
+}
+
+.message.medium {
+  font-size: 0.9rem;
+}
+
+.message.long {
+  font-size: 0.8rem;
+}
+
+.name {
+  text-align: right;
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin-top: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+    #loading {
+      text-align: center;
+      opacity: 0.75;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="title">小餅們的生日祝福牆</div>
+  <div class="subtitle">謝謝每一份送來的心意</div>
+
+  <div id="loading">載入中...</div>
+  <div id="wall"></div>
+
+  <script>
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwaGuxY4crr9qMVXa-F1LwsyHqyKDJJ78G5lfUFNOStYXyALfyVPTjFiYxADJVCoKtiug/exec";
+
+    function getSizeClass(text) {
+      const len = text.length;
+
+      if (len <= 35) {
+        return "short";
+      }
+
+      if (len <= 75) {
+        return "medium";
+      }
+
+      return "long";
+    }
+
+    function renderBlessings(data) {
+      const wall = document.getElementById("wall");
+      const loading = document.getElementById("loading");
+
+      loading.style.display = "none";
+      wall.innerHTML = "";
+
+      if (!data || data.length === 0) {
+        wall.innerHTML = "<div style='grid-column: 1 / -1; text-align:center; opacity:0.75;'>祝福牆準備中。</div>";
+        return;
+      }
+
+      data.forEach(function (item) {
+        const card = document.createElement("div");
+        card.className = "card";
+
+        const message = document.createElement("div");
+        message.className = "message " + getSizeClass(item.message);
+        message.textContent = item.message;
+
+        const name = document.createElement("div");
+        name.className = "name";
+        name.textContent = "— " + (item.name || "匿名");
+
+        card.appendChild(message);
+        card.appendChild(name);
+        wall.appendChild(card);
+      });
+    }
+
+    const script = document.createElement("script");
+    script.src = SCRIPT_URL + "?callback=renderBlessings";
+    document.body.appendChild(script);
+  </script>
+
+</body>
+</html>
